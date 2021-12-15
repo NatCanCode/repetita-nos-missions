@@ -1,13 +1,4 @@
-/* 
-#53A790 green
-#F1DA88 yellow
-#E85F5B red
-#2445A2 blue
-#392F65 navy
-#F2F0F3 light grey
-#777777 dark grey
-Font Montserrat
-16px 18px 32px 36px */
+/* #F2F0F3 light grey */
 
 *{
     margin: 0;
@@ -27,7 +18,6 @@ body{
     font-style: regular;
     font-size: clamp(16px, 10vw, 18px);
     line-height: 1.5;
-    /* convention du web : séparer paragraphes de 1.3 */
     cursor: none;
 }
 img{
@@ -71,7 +61,7 @@ p{
     text-align: center;
     object-fit: cover;
     display: block;
-    min-height: 50vh;
+    max-height: 50vh;
     margin-bottom: 10%;
 }
 .title h1{
@@ -83,7 +73,7 @@ p{
     background-color: #53A790;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    max-width: 50%;
     padding-left: 8%;
     padding-right: 10%;
     /* padding: top right bottom left; */
@@ -97,7 +87,7 @@ p{
     background-color: #E85F5B;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    max-width: 50vw;
     padding-left: 8%;
     padding-right: 10%;
 }
@@ -118,11 +108,11 @@ p{
 .trois-valeurs{
     justify-content: space-between;
 }
-.engages{
+.engages, .curieux, .optimistes{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 33%;
+    max-width: 33vw;
     padding: 5%;
 }
 .engages img{
@@ -134,25 +124,11 @@ p{
 .engages p{
     padding-top: 8%;
 }
-.curieux{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 33%;
-    padding: 5%; 
-}
 .curieux h2{
     padding-top: 8%;
 }
 .curieux p{
     padding-top: 8%;
-}
-.optimistes{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 33%;
-    padding: 5%; 
 }
 .optimistes h2{
     padding-top: 8%;
@@ -166,7 +142,7 @@ p{
     background-color: #53A790;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    max-width: 50%;
     padding-left: 8%;
     padding-right: 10%;
     /* padding: top right bottom left; */
@@ -183,7 +159,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    max-width: 50%;
 }
 .consommation-tagline{
     background-color: #E85F5B;
@@ -208,3 +184,92 @@ p{
 .logo-repetita{
     height: 70%;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px){
+    /* HEADER */
+    .title h1{
+        padding-top: 10%;
+        padding-bottom: 7%;
+    }
+
+    /* MISSON */
+    .mission-section{
+        flex-direction: column;
+    }
+    .mission{
+        justify-content: center;
+        max-width: 100%;
+        padding: 13%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    /* SECONDE MAIN */
+    .seconde-main-section{
+        flex-direction: column-reverse;
+    }
+    .seconde-main{
+        justify-content: center;
+        max-width: 100%;
+        padding: 13%;
+    }
+    h2{
+        text-align: center;
+    }
+
+    /* VALEURS */
+    .valeurs{
+        flex-direction: column;
+        padding: 13%;
+        height: auto;
+    }
+    .valeurs img{
+        padding-top: 25%;
+    }
+    .trois-valeurs{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .engages, .curieux, .optimistes{
+        justify-content: center;
+        max-width: 100vw;
+        padding: 0%;
+    }
+
+    /* MARQUES */
+    .marques-section{
+        flex-direction: column-reverse;
+    }
+    .marques{
+        justify-content: center;
+        max-width: 100%;
+        padding: 13%;
+    }
+
+    /* CONSOMMATION */
+    .consommation{
+        flex-direction: column;
+    }
+    .consommation-bloc{
+        max-width: 100%;
+    }
+    .consommation-tagline{
+        padding: 10%;
+        height: auto;
+    }
+    .consommation-logo{
+        padding: 20%;
+        height: auto;
+    }    
+}
+
+/* Breakpoints - most common screen size devices used in 2021:
+1920×1080
+1366×768 
+360×640 => Galaxy S5
+414×896 => iPhone 6/7/8+
+1536×864
+375×667 => iPhone X
+768x1024 => iPad */
