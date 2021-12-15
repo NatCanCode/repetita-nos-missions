@@ -1,0 +1,210 @@
+/* 
+#53A790 green
+#F1DA88 yellow
+#E85F5B red
+#2445A2 blue
+#392F65 navy
+#F2F0F3 light grey
+#777777 dark grey
+Font Montserrat
+16px 18px 32px 36px */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+}
+body{
+    background-color: #F2F0F3;
+    font-family: 'Montserrat', sans-serif;
+    color: #777777;
+    font-style: regular;
+    font-size: clamp(16px, 10vw, 18px);
+    line-height: 1.5;
+    /* convention du web : séparer paragraphes de 1.3 */
+    cursor: none;
+}
+img{
+    /* garder ratio d'une image  */
+    object-fit: cover;
+    display: block;
+    max-width: 100%; /* si elle n'a plus la place, elle va se reduire */
+}
+div{
+    height: auto;
+}
+h1{
+    font-size: clamp(24px, 10vw, 48px);
+}
+h2{
+    font-size: clamp(22px, 10vw, 32px);
+}
+h3{
+    font-size: clamp(18px, 10vw, 28px);
+}
+p{
+    font-size: clamp(16px, 10vw, 18px);
+}
+.white{
+    color: #FFFFFF;
+}
+.red{
+    color: #E85F5B;
+}
+.green{
+    color: #53A790;
+}
+.blue{
+    color: #2445A2;
+}
+
+/* HEADER */
+.title{
+    background-color: #53A790;
+    background: url(img/trees-header.jpg) no-repeat center / cover;
+    text-align: center;
+    object-fit: cover;
+    display: block;
+    min-height: 50vh;
+    margin-bottom: 10%;
+}
+.title h1{
+    padding-top: 13%;
+}
+
+/* MISSON */
+.mission{
+    background-color: #53A790;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 10%;
+    /* padding: top right bottom left; */
+}
+.mission p{
+    padding-top: 8%;
+}
+
+/* SECONDE MAIN */
+.seconde-main{
+    background-color: #E85F5B;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 10%;
+}
+.seconde-main p{
+    padding-top: 8%;
+}
+
+/* VALEURS */
+.valeurs{
+    background-color: #F1DA88; 
+    padding: 5%;
+    height: 100vh;
+}
+.valeurs-title{
+    justify-content: center;
+    /* padding-bottom: 1%; */
+}
+.trois-valeurs{
+    justify-content: space-between;
+}
+.engages{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+    padding: 5%;
+}
+.engages img{
+    width: 40%;
+}
+.engages h2{
+    padding-top: 8%;
+}
+.engages p{
+    padding-top: 8%;
+}
+.curieux{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+    padding: 5%; 
+}
+.curieux h2{
+    padding-top: 8%;
+}
+.curieux p{
+    padding-top: 8%;
+}
+.optimistes{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+    padding: 5%; 
+}
+.optimistes h2{
+    padding-top: 8%;
+}
+.optimistes p{
+    padding-top: 8%;
+}
+
+/* MARQUES */
+.marques{
+    background-color: #53A790;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 10%;
+    /* padding: top right bottom left; */
+}
+.marques p{
+    padding-top: 8%;
+}
+
+/* CONSOMMATION */
+.consommation{
+    margin-bottom: 10%;
+}
+.consommation-bloc{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.consommation-tagline{
+    background-color: #E85F5B;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8%;
+    height: 70%;
+}
+.consommation-logo{
+    background-color: #53A790;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 30%;
+}
+.consommation h1{
+    padding-top: 8%;
+}
+.logo-repetita{
+    height: 70%;
+}
