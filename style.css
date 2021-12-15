@@ -81,6 +81,9 @@ p{
 .mission p{
     padding-top: 8%;
 }
+.mission-section img{
+    width: 100%;
+}
 
 /* SECONDE MAIN */
 .seconde-main{
@@ -93,6 +96,9 @@ p{
 }
 .seconde-main p{
     padding-top: 8%;
+}
+.seconde-main-section img{
+    width: 100%;
 }
 
 /* VALEURS */
@@ -150,6 +156,9 @@ p{
 .marques p{
     padding-top: 8%;
 }
+.marques-section img{
+    width: 100%;
+}
 
 /* CONSOMMATION */
 .consommation{
@@ -183,6 +192,9 @@ p{
 }
 .logo-repetita{
     height: 70%;
+}
+.autumn{
+    width: 100%;
 }
 
 /* MEDIA QUERIES */
