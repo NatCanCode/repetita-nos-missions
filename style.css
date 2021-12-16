@@ -165,9 +165,6 @@ p{
 }
 
 /* CONSOMMATION */
-.consommation{
-    margin-bottom: 10%;
-}
 .consommation-bloc{
     flex-direction: column;
     justify-content: center;
