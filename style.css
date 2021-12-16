@@ -116,11 +116,12 @@ p{
 .valeurs{
     background-color: #F1DA88; 
     padding: 5%;
-    height: 100vh;
+    height: auto;
 }
 .valeurs-title{
     justify-content: center;
-    /* padding-bottom: 1%; */
+    padding: 2% 5% 6% 5%;
+    /* padding: top right bottom left; */
 }
 .trois-valeurs{
     justify-content: space-between;
@@ -130,27 +131,19 @@ p{
     justify-content: flex-start;
     align-items: center;
     max-width: 33vw;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .engages img{
-    width: 40%;
+    width: 30%;
 }
-.engages h2{
+.curieux img{
+    width: 23%;
+}
+.engages h2, .curieux h2, .optimistes h2{
     padding-top: 8%;
 }
-.engages p{
-    padding-top: 8%;
-}
-.curieux h2{
-    padding-top: 8%;
-}
-.curieux p{
-    padding-top: 8%;
-}
-.optimistes h2{
-    padding-top: 8%;
-}
-.optimistes p{
+.engages p, .curieux p, .optimistes p{
     padding-top: 8%;
 }
 
