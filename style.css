@@ -55,17 +55,28 @@ p{
 }
 
 /* HEADER */
-.title{
-    background-color: #53A790;
-    background: url(img/trees-header.jpg) no-repeat center / cover;
-    text-align: center;
-    object-fit: cover;
-    display: block;
-    max-height: 50vh;
-    margin-bottom: 10%;
+.banner{
+    height: 50vh;
+    width: 100%;
+    position: relative;
 }
-.title h1{
-    padding-top: 13%;
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.title{
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+/* BREAK */
+.break{
+    height: 20vh;
 }
 
 /* MISSON */
@@ -200,10 +211,30 @@ p{
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px){
     /* HEADER */
-    .title h1{
-        padding-top: 10%;
-        padding-bottom: 7%;
+    .banner{
+        height: 30vh;
+        width: 100%;
+        position: relative;
     }
+    .banner img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .title{
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+    
+    /* BREAK */
+    .break{
+        height: 10vh;
+    }
+    
 
     /* MISSON */
     .mission-section{
